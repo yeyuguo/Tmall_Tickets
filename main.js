@@ -22,7 +22,7 @@ function tmall() {
 			callback && callback();
 		}else{
 			console.log('异步加载元素中....' + path );
-			setTimeout( function(){checkElementState(path,callback);},200);
+			setTimeout( function(){checkElementState(path,callback);},100);
 		}
 	}
 
@@ -114,7 +114,7 @@ function tmall() {
 			console.log('时间到了！！！');
 			
 		}else{
-			setTimeout(function(){ enterTimeCheckLoop(callback);},400);
+			setTimeout(function(){ enterTimeCheckLoop(callback);},200);
 			
 			//console.log('--');
 		}
