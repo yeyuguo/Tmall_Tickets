@@ -1,15 +1,18 @@
 {
   "manifest_version": 2,
-  "name": "Tmall-tickets",
-  "version": "1.0",
-  "description": "天猫超市抢购茅台",
+  "name": "Tmall-Suning-tickets",
+  "version": "2.0",
+  "description": "天猫-苏宁抢购茅台",
   "browser_action": {
     "default_icon": "icon.png"
   },
   "content_scripts": [
     {
-      "matches": ["https://chaoshi.detail.tmall.com/*","https://cart.tmall.com/*","https://buy.tmall.com/*"],
-      "js": ["maotai.js"],
+      "matches": [
+        "https://chaoshi.detail.tmall.com/*","https://cart.tmall.com/*","https://buy.tmall.com/*",
+        "https://product.suning.com/0000000000/11001203841.html*", "https://shopping.suning.com/order.do/*", "https://payment.suning.com/*"
+      ],
+      "js": ["main.js"],
 	  "run_at": "document_idle"
     }
   ]

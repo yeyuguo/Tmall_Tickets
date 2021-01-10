@@ -13,3 +13,8 @@ https://cart.tmall.com/cart.htm
 插件自动运行后，时间到了后，看看是否订单里面有付款项，有的话就说抢票成功，没有则是没中。
 
 
+# 打包生成 chrome 插件
+https://blog.csdn.net/wanwuguicang/article/details/79742017
+
+# 插件提示报错
+https://blog.csdn.net/wueasy/article/details/106841526?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-3.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-3.control
