@@ -13,7 +13,17 @@ if( domain.indexOf('suning.com')>=0 ) {
 function tmall() {
 	console.log('天猫平台')
 	//定时器
-	var timer = null;
+  var timer = null;
+  
+	//目标时间
+  var dDate = new Date();  //10点和20点开抢
+  if( dDate.getHours() < 10 ){
+    dDate.setHours(9,59,59.2);
+  }else{
+    dDate.setHours(19,59,59.2);
+  }
+  
+  //dDate.setSeconds( dDate.getSeconds() + 10 );
 
 	//检测状态
 	function checkElementState(path,callback){
@@ -82,16 +92,7 @@ function tmall() {
 
 
 
-	//目标时间
-		var dDate = new Date();  //10点和20点开抢
-		if( dDate.getHours() < 10 ){
-			dDate.setHours(9,59,59.2);
-		}else{
-			dDate.setHours(19,59,59.2);
-		}
-		
-		//dDate.setSeconds( dDate.getSeconds() + 10 );
-		
+  
 	//进入时间判断循环
 	function enterTimeCheckLoop(callback){
 		var date = new Date();
@@ -101,7 +102,7 @@ function tmall() {
 		
 		var diff = Date.parse(dDate) - Date.parse(date) ;
 		
-		console.log(diff);
+		console.log(diff/1000);
 		
 		if(diff < - 900 ){
 			
@@ -161,10 +162,7 @@ function suning(){
   //目标时间
   var targetDate = new Date();  //10点和20点开抢
   if( targetDate.getHours() < 10 ){
-    targetDate.setHours(9,59,59.2);
-  }else{
-    // targetDate.setHours(19,59,59.2);
-    targetDate.setHours(11,54,30.2);
+    targetDate.setHours(9,29,29.2);
   }
   //targetDate.setSeconds( targetDate.getSeconds() + 10 );
 
